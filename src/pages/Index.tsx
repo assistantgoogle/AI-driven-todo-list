@@ -10,6 +10,14 @@ export default function Index() {
   const { data: tasks = [], isLoading, error } = useQuery({
     queryKey: ['tasks'],
     queryFn: taskService.getAllTasks,
+    onError: (error: Error) => {
+      console.error('Error fetching tasks:', error);
+      toast({
+        title: "Error",
+        description: "Could not connect to the server. Please ensure your Spring Boot backend is running.",
+        variant: "destructive",
+      });
+    },
   });
 
   const updateTaskMutation = useMutation({
@@ -40,11 +48,31 @@ export default function Index() {
   };
 
   if (isLoading) {
-    return <div>Loading tasks...</div>;
+    return (
+      <div className="container mx-auto px-4 py-8">
+        <div className="animate-pulse space-y-4">
+          <div className="h-8 bg-gray-200 rounded w-1/4"></div>
+          <div className="space-y-3">
+            {[1, 2, 3].map((n) => (
+              <div key={n} className="h-32 bg-gray-200 rounded"></div>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
   }
 
   if (error) {
-    return <div>Error loading tasks: {error.message}</div>;
+    return (
+      <div className="container mx-auto px-4 py-8">
+        <div className="text-center">
+          <h2 className="text-2xl font-bold text-red-600 mb-4">Connection Error</h2>
+          <p className="text-gray-600">
+            Unable to connect to the server. Please ensure your Spring Boot backend is running on port 8080.
+          </p>
+        </div>
+      </div>
+    );
   }
 
   return (
