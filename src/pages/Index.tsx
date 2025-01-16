@@ -10,14 +10,10 @@ export default function Index() {
   const { data: tasks = [], isLoading, error } = useQuery({
     queryKey: ['tasks'],
     queryFn: taskService.getAllTasks,
-    onError: (error: Error) => {
-      console.error('Error fetching tasks:', error);
-      toast({
-        title: "Error",
-        description: "Could not connect to the server. Please ensure your Spring Boot backend is running.",
-        variant: "destructive",
-      });
+    meta: {
+      errorMessage: "Could not connect to the server. Please ensure your Spring Boot backend is running."
     },
+    retry: 1,
   });
 
   const updateTaskMutation = useMutation({
