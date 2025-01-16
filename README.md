@@ -1,69 +1,105 @@
-# Welcome to your Lovable project
+# TaskTuner - AI-Powered Task Management
 
-## Project info
+TaskTuner is a modern, AI-enhanced task management application built with React and TypeScript. It helps users organize their tasks efficiently while leveraging AI capabilities for better productivity.
 
-**URL**: https://lovable.dev/projects/528269f6-cb52-4698-bfdb-971e8b210126
+## 🌟 Features
 
-## How can I edit this code?
+### Task Management
+- Create, update, and delete tasks
+- Categorize tasks with custom categories
+- Set priority levels (High, Medium, Low)
+- Track task completion status
+- Set due dates for better time management
 
-There are several ways of editing your application.
+### Smart Organization
+- Search functionality for quick task lookup
+- Real-time task filtering
+- Responsive design for all devices
+- Interactive task cards with completion toggles
 
-**Use Lovable**
+### Analytics Dashboard
+- Visual representation of task statistics
+- Track completion rates
+- Priority distribution overview
+- Category-wise task distribution
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/528269f6-cb52-4698-bfdb-971e8b210126) and start prompting.
+## 🛠️ Technology Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend Framework**: React with TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **State Management**: React Query
+- **Icons**: Lucide React
+- **Charts**: Recharts
+- **Build Tool**: Vite
 
-**Use your preferred IDE**
+## 🚀 Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
+- Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Installation
 
-Follow these steps:
+```bash
+# Clone the repository
+git clone <YOUR_REPOSITORY_URL>
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Navigate to project directory
+cd tasktuner
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Install dependencies
+npm install
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## 🤖 AI Integration
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+TaskTuner is built using Lovable.dev, an AI-powered development platform that enables:
 
-**Use GitHub Codespaces**
+- **Intelligent Code Generation**: The entire application structure and components are generated and maintained through AI assistance
+- **Real-time Code Updates**: Changes can be made through natural language conversations with the AI
+- **Best Practices Implementation**: AI ensures code follows modern development standards and patterns
+- **Responsive Design**: AI automatically implements responsive layouts for all screen sizes
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📱 Usage
 
-## What technologies are used for this project?
+1. **Adding Tasks**
+   - Click the "Add Task" button
+   - Fill in task details (title, description, category, due date, priority)
+   - Submit to create the task
 
-This project is built with .
+2. **Managing Tasks**
+   - Mark tasks as complete/incomplete
+   - Search for specific tasks using the search bar
+   - View task details in the interactive cards
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+3. **Analytics**
+   - Monitor task completion rates
+   - View distribution of tasks by priority
+   - Track category-wise task allocation
 
-## How can I deploy this project?
+## 🎨 Customization
 
-Simply open [Lovable](https://lovable.dev/projects/528269f6-cb52-4698-bfdb-971e8b210126) and click on Share -> Publish.
+The application uses Tailwind CSS for styling, making it easy to customize:
+- Modify colors, spacing, and typography through Tailwind classes
+- Adjust component layouts using flex and grid utilities
+- Create responsive designs with Tailwind's breakpoint system
 
-## I want to use a custom domain - is that possible?
+## 🤝 Contributing
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+Contributions are welcome! Feel free to:
+- Report bugs
+- Suggest new features
+- Submit pull requests
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🙏 Acknowledgments
+
+- Built with [Lovable.dev](https://lovable.dev)
+- UI components from [shadcn/ui](https://ui.shadcn.com/)
+- Icons from [Lucide](https://lucide.dev/)
